@@ -1,0 +1,38 @@
+.section1-header{
+  box-sizing: border-box;
+  margin-top: 5rem;
+}
+ 
+.section1-header-text{
+  color: #fff;
+  font-size: 1.3rem;
+  text-shadow: 2px 2px 2px black;
+}
+ 
+.section1-header-text:hover{
+  text-decoration: underline;
+}
+ 
+.section1-header-text:active{
+  color: #afafaf;
+}
+
+.header-sub{
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+ 
+
+@media (max-width:576px) {
+  
+  /* .section1-header-text{
+
+    font-size: 1.2rem;
+  } */
+
+  .header-sub{
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+}

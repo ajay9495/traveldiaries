@@ -1,38 +1,240 @@
-.App {
-  text-align: center;
+
+*{
+   overflow-x: hidden;
+   box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.padding-right-10{
+   padding-right: 10rem;
+   box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.main-wrapper{
+   background-color: #0B1D27;
+   /* background-color: #fff; */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+ .section1-wrapper{
+    background-image: url('./image//mountain.webp') !important;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    aspect-ratio: 2560/1440;
+ }
+
+ .section1-overlay{
+    width: 100%;
+    aspect-ratio: 2560/1440;
+    opacity: 1;
+    background-image: linear-gradient(#0B1D27, #fff0, #0B1D27);
+    overflow: hidden;
+ }
+
+ .section1-top-box{
+   height: fit-content;
+   width: fit-content;
+   z-index: 2;
+   display: flex;
+   flex-direction: row;
+ }
+
+ .section1-top-box-line{
+   height: 1.25rem;
+   border-bottom: 2px solid #F9C449;
+   width: 4rem;
+ }
+
+ .section1-top-box-text{
+   /* background-color: #fff; */
+   color: #F9C449;
+   font-size: 2rem;
+   font-weight: 500;
+ }
+
+ .section1-info-Row{
+    height: 100%;
+    overflow: hidden;
+ }
+
+ .section1-info-Col{
+    width: 60%;
+    height: 100%;
+    margin-top: 10rem;
+ }
+ 
+.section2-wrapper{
+   min-height: 50rem;
+   background-color: #0B1D27;
+   /* border: 1px solid #000; */
 }
 
-.App-link {
-  color: #61dafb;
+
+
+.placeholder{
+   height: 10rem;
+   width: 10rem;
+   background-color: #afafaf;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.section2-image-div{
+   /* background-color: #0B1D27; */
+   /* background-image: url('./image//travel_image.png'); */
+   background-size: cover;
+   background-position: center;
+   width: 25rem;
+   aspect-ratio: 1/1.50; 
+   overflow: hidden;
 }
+
+
+.travel-image{
+   width: 100%;
+   object-fit: cover;
+}
+
+.section5-wrapper{
+   background-image: url('./image/coniferous.webp');
+   background-size: cover;
+   background-position: center;
+   width: 100%;
+   aspect-ratio: 2560/1440;
+}
+
+.section5-overlay{
+   /* background-color: #0B1D27; */
+   width: 100%;
+   aspect-ratio: 2560/1440;
+   opacity: 1;
+   background-image: linear-gradient(#0B1D27, #fff0, #0B1D27);
+   overflow: hidden;
+}
+
+.section5-inner-row{
+   height: 100%;
+}
+
+.map-wrapper{
+   background-image: url('./image/map.PNG');
+   background-size: cover;
+   background-position: center;
+   aspect-ratio: 1;
+}
+
+.address-title{
+   color: #fff;
+   font-size: 1.3rem;
+   text-shadow: 2px 2px 2px black;
+   font-weight: 500;
+}
+
+
+.address-value{
+   color: #fff;
+   font-size: 1rem;
+   text-shadow: 2px 2px 2px black;
+}
+
+.footer{
+   padding-top: 5rem;
+   padding-bottom: 5rem;
+}
+
+.social-icon-wrapper{
+   /* background-color: #fff; */
+   width: 3rem;
+   height: 3rem;
+   border-radius: 50%;
+   border: 3px solid #fff;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   box-sizing: border-box;
+}
+
+.social-icon-wrapper:hover{
+   border: 3px solid #696969;
+}
+
+.social-icon-wrapper:active{
+   border: 3px solid #afafaf;
+}
+
+
+.social-icon{
+   height: 2rem;
+   width: 2rem;
+}
+
+
+@media (max-width: 576px){
+
+   .padding-right-0-s{
+      padding-right: 0rem;
+   }
+
+   .section1-wrapper{
+      aspect-ratio: 1/1.5;
+      background-position: left top;
+   }
+
+   .section1-overlay{
+      aspect-ratio: 1/1.5;
+   }
+
+   .section1-info-Row{
+      height: 100%;
+   }
+  
+   .section1-info-Col{
+      width: 70%;
+      margin-left: 10px;
+      /* height: 100%; */
+      /* margin: 0px; */
+   }
+
+   .section2-wrapper{
+      height: 80rem;
+      overflow: hidden;
+   }
+
+   .section2-image-div{
+
+      margin-right: auto;
+   }
+
+   /* .section2-inner-row{
+      flex-direction: column-reverse !important;
+   } */
+
+   #about1-inner-row{
+      flex-direction: column-reverse !important;
+   }
+
+   #about3-inner-row{
+      flex-direction: column-reverse !important;
+   }
+
+
+   .section5-wrapper{
+      aspect-ratio: 1/1.5;
+      background-position: left top;
+   }
+
+   .section5-overlay{
+      aspect-ratio: 1/1.5;
+   }
+
+   .section5-map{
+      display: none !important;
+   }
+
+
+
+}
+
+
+
+
+

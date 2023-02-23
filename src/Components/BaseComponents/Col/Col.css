@@ -1,0 +1,47 @@
+.col_base{
+    display: flex; 
+    flex-direction: column; 
+    /* width: 100%;  */
+    /* height: fit-content;  */
+    box-sizing: border-box; 
+    /* overflow: auto; */
+    
+    
+}
+
+.c-expand{
+    flex: 1 1 auto;
+}
+
+.c-collapse{
+    flex: 0 0 auto;
+}
+
+
+.c-x-start{
+    align-items: flex-start;
+}
+
+.c-x-end{
+    align-items: flex-start;
+}
+
+.c-x-center{
+    align-items: center;
+}
+
+.c-y-center{
+    justify-content: center;
+}
+
+.c-y-start{
+    justify-content: flex-start;
+}
+
+.c-y-end{
+    justify-content: flex-end;
+}
+
+
+
+
